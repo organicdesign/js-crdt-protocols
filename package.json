@@ -3,13 +3,7 @@
   "version": "0.1.0",
   "description": "Protocols for encoding and decoding CRDT data.",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
     "./*": {
       "import": "./dist/*/index.js",
       "types": "./dist/*/index.d.ts"
@@ -17,12 +11,9 @@
   },
   "scripts": {
     "lint": "eslint ./src/*",
-    "build": "npm run build:templates && npm run build:prepare && npm run build:protos && npm run build:source && npm run build:clean",
-    "build:templates": "./generate-protobufs.sh",
+    "build": "npm run build:prepare && npm run build:protos",
     "build:prepare": "mkdir -p dist build-ts && touch dist/cleanup build-ts/cleanup && rm -R dist/* build-ts/*",
-    "build:protos": "protons protobufs/*.proto && ./move-protos.sh && tsc -b && rm -R build-ts/*",
-    "build:source": "cp src/* build-ts/ && tsc -b && rm -R build-ts/*",
-    "build:clean": "rm -R build-ts"
+    "build:protos": "protons crdt-protocols/protobufs/*.proto && ./move-protos.sh && tsc -b && rm -R build-ts/*"
   },
 	"homepage": "https://code.organicdesign.nz/organicdesign/js-crdt-protocols",
   "repository": {
