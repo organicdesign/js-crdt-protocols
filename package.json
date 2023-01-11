@@ -10,10 +10,10 @@
     }
   },
   "scripts": {
-    "lint": "eslint ./src/*",
     "build": "npm run build:prepare && npm run build:protos",
     "build:prepare": "mkdir -p dist build-ts && touch dist/cleanup build-ts/cleanup && rm -R dist/* build-ts/*",
-    "build:protos": "protons crdt-protocols/protobufs/*.proto && ./move-protos.sh && tsc -b && rm -R build-ts/*"
+    "build:protos": "protons crdt-protocols/protobufs/*.proto && ./move-protos.sh && tsc -b && rm -R build-ts/*",
+    "submodule": "git submodule update --init --recursive --remote"
   },
 	"homepage": "https://code.organicdesign.nz/organicdesign/js-crdt-protocols",
   "repository": {
