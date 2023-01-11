@@ -1,0 +1,4 @@
+[submodule "crdt-protocols"]
+	path = crdt-protocols
+	url = https://code.organicdesign.nz/organicdesign/crdt-protocols.git
+	branch = master
