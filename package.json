@@ -18,7 +18,7 @@
 	"homepage": "https://code.organicdesign.nz/organicdesign/js-crdt-protocols",
   "repository": {
     "type": "git",
-    "url": "ssh://git@code.organicdesign.nz:222/organicdesign/crdt-protocols.git"
+    "url": "https://github.com/organicdesign/js-crdt-protocols.git"
   },
   "author": "Saul Boyd",
   "license": "GPL-3.0-or-later",
