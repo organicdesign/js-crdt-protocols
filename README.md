@@ -8,6 +8,10 @@ JS implementations of crdt-protocols.
 npm i @organicdesign/crdt-protocols
 ```
 
+## Status
+
+This package is currently in development (along with crdt-protocols) and is not recommended for use.
+
 ## Usage
 
 Import the protocol you want from this package:
