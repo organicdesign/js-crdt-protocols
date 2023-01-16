@@ -1,6 +1,6 @@
 {
   "name": "@organicdesign/crdt-protocols",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Protocols for encoding and decoding CRDT data.",
   "keywords": ["crdt", "protobuf", "protocol"],
   "type": "module",
