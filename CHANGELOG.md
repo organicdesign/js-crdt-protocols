@@ -1,4 +1,4 @@
-## [0.1.1](https://github.com/organicdesign/crdt-tests/compare/v0.1.0...v0.1.1) (2023-01-17)
+## [0.1.1](https://github.com/organicdesign/js-crdt-protocols/compare/v0.1.0...v0.1.1) (2023-01-17)
 
 ### Added
 
