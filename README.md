@@ -2,6 +2,13 @@
 
 JS implementations of crdt-protocols.
 
+## Table of Contents
+
+- [Install](#install)
+- [Status](#status)
+- [Usage](#usage)
+- [Updating](#updating)
+
 ## Install
 
 ```
